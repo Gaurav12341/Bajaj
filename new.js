@@ -7,6 +7,7 @@ app.use(bodyParser.json());
 
 // GET endpoint 
 app.get('/bfhl', (req, res) => {
+    console.log("hello wold");
     res.json({ operation_code: '1' });
 });
 
