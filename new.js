@@ -6,12 +6,12 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // GET endpoint 
-app.get('/api', (req, res) => {
+app.get('/api/bfhl', (req, res) => {
     res.json({ operation_code: '1' });
 });
 
 // POST endpoint
-app.post('/challenge', (req, res) => {
+app.post('/challenge/bfhl', (req, res) => {
     try {
         const data = req.body;
         const status = 'Success';
